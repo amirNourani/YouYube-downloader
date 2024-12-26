@@ -1,0 +1,8 @@
+app:
+  cookiesFile: cookies.txt
+  developerUsername: no_amir
+
+telegramBot:
+  name: YouTube Downloader
+  link: https://t.me/amir_ytdl_bot
+  token: 7882619934:AAHse_R8LZFCzVPslI4dErCLJfmJWl_4WG8
