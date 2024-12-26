@@ -1,0 +1,5 @@
+services:
+  yt_downloader:
+    build: .
+    image: yt_downloader:1.0.0
+    restart: on-failure
