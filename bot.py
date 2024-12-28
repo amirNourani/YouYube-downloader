@@ -38,8 +38,7 @@ async def downloader(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
         video_path = download_video(url, settings.COOKIES_FILE)
 
         await context.bot.send_message(chat_id=update.effective_chat.id, text="Sending your video...")
-        with open(video_path, 'rb') as video:
-            await context.bot.send_video(chat_id=update.effective_chat.id, video=video)
+        await context.bot.send_video(chat_id=update.effective_chat.id, video=video_path)
 
     except Exception as e:
         await context.bot.send_message(chat_id=update.effective_chat.id,
